@@ -72,3 +72,11 @@ button{
     text-decoration: slateblue;
     border: 1px solid red;
 }
+
+
+ p {
+    font-family:cursive;
+    font-size: xx-large;
+    font-weight:lighter ;
+    text-align: center;
+}
