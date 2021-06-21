@@ -1,10 +1,10 @@
 
 
-fetch('http://puzzle.mead.io/puzzle').then((response) => {
-    response.json().then((data) =>{
-        console.log(data)
-    })
-})
+// fetch('http://puzzle.mead.io/puzzle').then((response) => {
+//     response.json().then((data) =>{
+//         console.log(data)
+//     })
+// })
 
 
 
@@ -26,7 +26,7 @@ varr.addEventListener('submit',(e) => {
     ms2.textContent = ''
 
 
-    fetch('http://localhost:3000/weather_I?address='+ vr ).then((response) => {
+    fetch('/weather_I?address='+ vr ).then((response) => {
     response.json().then((data) =>{
 
 

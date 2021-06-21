@@ -4,6 +4,9 @@ const hbss = require('hbs')
 
 const ap = expres()
 
+
+const port = process.env.PORT  || 3000
+
 // console.log(__dirname)
 // console.log(__filename)
 
@@ -163,4 +166,6 @@ ap.get('*',(req,res) => {
     })
 })
 
-ap.listen(3000)
+ap.listen(port ,()=> {
+    console.log('Server is up on port' + port)
+})
