@@ -10,12 +10,11 @@ const forcst = (latti,longi,callback) => {
         }else if(respns.body.error ){
             callback("There is error in the cordinates , try another pair !",undefined)
         }else{
-            callback(undefined,"It is currently " + respns.body.current.temperature + " degrees out" + " but , It feels like " + respns.body.current.feelslike + " degrees")
+            callback(undefined,"Your latitude : " + latti + " and your longitude: "+ longi+" .............................................. You have wind speed :"+ respns.body.current.wind_speed + " Km/h "+respns.body.current.wind_degree+ " "+respns.body.current.wind_dir + ". It's "+respns.body.current.humidity + " % Humidity around with "+ respns.body.current.cloudcover + " % Cloudcover."+"It is currently " + respns.body.current.temperature + " degrees out" + " but , It feels like " + respns.body.current.feelslike + " degrees")
         }
     })
 
 }
-
 
 
 module.exports = forcst
